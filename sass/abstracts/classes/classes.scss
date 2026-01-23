@@ -34,3 +34,26 @@
 //         padding: $size__padding-top-and-bottom $size__padding-full-width-section-sides;
 //     }
 // }
+
+// Marin classes
+.no-margin-top {
+	margin-top: 0;
+}
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+.no-margin {
+	margin: 0;
+}
+
+// Display classes
+@media screen and (max-width: 781px) {
+	.hide-on-mobile {
+		display: none;
+	}
+}
+@media screen and (min-width: 782px) {
+	.hide-on-desktop {
+		display: none;
+	}
+}
