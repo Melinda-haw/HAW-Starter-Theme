@@ -16,6 +16,8 @@ input[type="submit"],
 	text-decoration: none;
 	width: fit-content;
 	height: fit-content;
+	min-width: 150px;
+	text-align: center;
 
 	&:hover,
 	&:active,
