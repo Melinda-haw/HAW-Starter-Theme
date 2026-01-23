@@ -17,6 +17,16 @@ WooCommerce styles override
 
 .alignfull > div:not(.alignfull) { max-width: 1500px; margin: auto; padding: 30px 35px; }
 
+.no-margin-top { margin-top: 0; }
+
+.no-margin-bottom { margin-bottom: 0; }
+
+.no-margin { margin: 0; }
+
+@media screen and (max-width: 781px) { .hide-on-mobile { display: none; } }
+
+@media screen and (min-width: 782px) { .hide-on-desktop { display: none; } }
+
 /** Shop tables */
 table.shop_table_responsive thead { display: none; }
 
