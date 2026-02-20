@@ -297,8 +297,8 @@ main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; p
 
 #site-navigation { display: flex; flex-direction: row; align-items: center; gap: 20px; }
 
-@media screen and (max-width: 999px) { #primary-menu { display: flex; position: fixed; z-index: 900; top: 0; right: -200%; height: 100dvh; padding: 30px; background: #1da8a1; transition: all 0.3s ease-in-out; box-shadow: 0 0 22px #00000082; width: 100%; }
-	.toggled #primary-menu { right: 0; } }
+@media screen and (max-width: 999px) { .main-menu-wrap { display: flex; position: fixed; z-index: 900; top: 0; right: -200%; height: 100dvh; padding: 30px; background: #1da8a1; transition: all 0.3s ease-in-out; box-shadow: 0 0 22px #00000082; width: 100%; }
+	.toggled .main-menu-wrap { right: 0; } }
 
 .main-navigation ul { display: none; list-style: none; margin: 0; padding-left: 0; }
 
@@ -323,7 +323,7 @@ main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; p
 
 .main-navigation.toggled #haw-hamburger span:nth-child(3) { -webkit-transform: translateY(-13px) rotate(-45deg); -ms-transform: translateY(-13px) rotate(-45deg); -o-transform: translateY(-13px) rotate(-45deg); transform: translateY(-13px) rotate(-45deg); }
 
-@media screen and (max-width: 999px) { .main-navigation.toggled ul { display: block; } }
+@media screen and (max-width: 999px) { .main-navigation.toggled ul { display: flex; flex-direction: column; } }
 
 #haw-hamburger { z-index: 999; top: 32px; transition: all 0.3s ease-in-out; cursor: pointer; }
 
@@ -365,7 +365,7 @@ main, aside, .footer-inner, .masthead-inner { max-width: 1500px; margin: auto; p
 .page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley { border: none; margin-bottom: 0; margin-top: 0; padding: 0; }
 
 /* Make sure logo link wraps around logo image. */
-.custom-logo-link { display: inline-block; }
+.custom-logo-link { display: flex; }
 
 /* Captions
 --------------------------------------------- */

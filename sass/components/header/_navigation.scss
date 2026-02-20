@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 999px) {
-	#primary-menu  {
+	.main-menu-wrap {
 		display: flex;
 		position: fixed;
 		z-index: 900;
@@ -42,7 +42,7 @@
 		box-shadow: 0 0 22px #00000082;
 		width: 100%;
 	}
-	.toggled #primary-menu  {
+	.toggled .main-menu-wrap  {
 		right: 0;
 	}
 }
@@ -140,7 +140,8 @@
 		}
 		@media screen and (max-width: 999px) {
 			ul {
-				display: block;
+				display: flex;
+				flex-direction: column;
 			}
 		}
 	}
