@@ -37,14 +37,16 @@
 					<span></span>
 					<span></span>
 				</div>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
+				<div class="main-menu-wrap">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+				</div>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
